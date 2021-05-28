@@ -144,7 +144,7 @@ firebase.initializeApp(firebaseConfig);
                         <div class="card-text">
                             <h3><span id="discord-counter"></span>
                                 <script>
-                                    firebase.database().ref(`membersSize/size`).on('value',(snap)=>{
+                                    firebase.database().ref(`data/globals/membersSize/size`).on('value',(snap)=>{
                                       document.getElementById("discord-counter").innerHTML = snap.val();            
                                     }); 
                                   
