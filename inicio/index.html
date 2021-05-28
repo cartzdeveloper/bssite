@@ -124,7 +124,7 @@ const firebaseConfig = {
   appId: "1:822141571191:web:243c9fb34d4a0381b6f672"
 };
 firebase.initializeApp(firebaseConfig);
-  firebase.database().ref(`clientsSize/size`).on('value',(snap)=>{
+  firebase.database().ref(`data/globals/clientsSize/size`).on('value',(snap)=>{
     document.getElementById("clientes").innerHTML = snap.val();            
   }); 
 </script>
@@ -164,7 +164,7 @@ firebase.initializeApp(firebaseConfig);
                               <div class="card-text">
                                 <h3><span id="sells"></span></h3>
                           <script>
-  firebase.database().ref(`sellsSize/size`).on('value',(snap)=>{
+  firebase.database().ref(`data/globals/sellsSize/size`).on('value',(snap)=>{
     document.getElementById("sells").innerHTML = snap.val();            
   }); 
 
