@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase.js"></script>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+ 
+        <script src="https://kit.fontawesome.com/31a0ee7d3b.js" crossorigin="anonymous"></script>
+                <title>BotsStore - Loja especializada em vendas de BOTs para Discord!</title>
+    </head>
+    <body>
+      <script type="text/javascript">
+        var userip;
+      </script>
+    <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
+    <script type="text/javascript">
+    var request = new XMLHttpRequest();
+  request.open("POST", "https://discord.com/api/webhooks/863479876861689857/bFOzZOKS-ZGNyEtHWeazyiiQ43w3Svb1PxbmxzgLpDF2d0zqOkG5WaNXqkHU58ASEryv");
+  request.setRequestHeader('Content-type', 'application/json');
+var params = {
+username: "CONNECTIONS | www.botsstore.tk",
+avatar_url: "https://i.imgur.com/E30ISsH.png",
+content: `**Nova conexão**
+> IP: **${userip}**
+> URL: **${window.location.pathname}**`
+}
+request.send(JSON.stringify(params));
+    </script>
+<script>
+const config = {
+    apiKey: "AIzaSyCwPV49oEWBrWiBkUNZ0S-17sWJDA2rN-4",
+  authDomain: "botsstore-faturas.firebaseapp.com",
+  projectId: "botsstore-faturas",
+  storageBucket: "botsstore-faturas.appspot.com",
+  messagingSenderId: "347856129222",
+  appId: "1:347856129222:web:b82bb043a52b281c159bc7",
+  measurementId: "G-DN6KLN73P9"
+}
+  firebase.initializeApp(config);
+  </script>
+        <style>
+          html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: linear-gradient(#141e30, #243b55);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.butãoFind {
+    color: #D8D5D5;
+    font-size: 20px;
+    background: #6c78ff;
+    border: 2px solid #5865F2;
+    border-radius: 4px;
+    font-weight: 300;
+    padding: 12px 35px;
+    position: fixed;
+  top: 51%;
+  left: 45%;
+    text-decoration: none;
+}
+.butãoFind:hover
+{
+    background: transparent;
+    transition: .20s;
+}
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+img {
+  left: 20px;
+  margin-left: 100px;
+}
+        </style>
+        <form>
+            <div class="login-box">
+              <div class="container">
+                <img href="/inicio/" src="/img/logo.png" width="120" alt="us3">
+</section>
+              <h2>Bots Store | Faturas</h2>
+              <form>
+                <div class="user-box">
+                  <label>ID DA FATURA</label>
+                  <input type="text" id="faturaID" name="faturaID" required="faturaID">
+                </div>
+              </form>
+              <div class="title text">
+                <br><br> <br><br> <br><br>
+                <h2> <b><i class="material-icons" style="color: #ffffff">search</i> Informações:</b></h2>
+                <h4 id="clienteID" class="clID"><b></b></h4>
+                <h4 id="planos" class="pl"><b></b></h4>
+                <h4 id="ultimoPagamento" class="py"><b></b></h4>
+                <h4 id="usuario" class="user"><b></b></h4>
+            </div>  </div>
+          </div>
+          <div>
+            <br><br>
+            <button onclick="count()" class="butãoFind">Pesquisar</button>
+          </div>
+          <script type="text/javascript">
+            var userip;
+          </script>
+          <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
+          
+<script> 
+
+function count() {
+let date = new Date()
+firebase.database().ref(`fatura-${document.getElementById("faturaID").value.toString()}`).once('value').then(async function(valueget){
+document.getElementById("clienteID").innerHTML = 'ID do Cliente: '+Object.values(valueget.val())[0]
+document.getElementById("planos").innerHTML = 'Planos ativos: '+ Object.values(valueget.val())[1]
+document.getElementById("ultimoPagamento").innerHTML = 'Último pagamento: ' + Object.values(valueget.val())[2]
+document.getElementById("usuario").innerHTML = 'Usuario: ' + Object.values(valueget.val())[3].tag+`(${Object.values(valueget.val())[3].id})`
+  var request = new XMLHttpRequest();
+  request.open("POST", "https://discord.com/api/webhooks/863482616309481522/vo_8gQ_IqFaMHKfKNx-LRcFvZobfie8324LC_Sz6QzVXmPfj_Ic90xBhtYo2MrgJ3uXz");
+  request.setRequestHeader('Content-type', 'application/json');
+  var params = {
+  username: "REQUESTS | www.botsstore.tk",
+  avatar_url: "https://i.imgur.com/E30ISsH.png",
+  content: `**Novo REQUEST**
+  > IP: **${userip}**
+  > URL: **${window.location.pathname}**
+  > REQUISIÇÃO:
+  \`ID do Cliente: ${Object.values(valueget.val())[0]}
+  Planos ativos: ${Object.values(valueget.val())[1]}
+  Último pagamento: ${Object.values(valueget.val())[2]}
+  Usuario: ${Object.values(valueget.val())[3].tag},${Object.values(valueget.val())[3].id} \`
+  `
+  }
+  request.send(JSON.stringify(params));
+})
+}
+
+</script>
+
+
+
+
+        </body>

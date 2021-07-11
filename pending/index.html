@@ -1,8 +1,61 @@
-/* 
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <script data-ad-client="ca-pub-1880575633283372" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Importantes -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="img/logo.png" rel="icon"> <!-- Publicidade -->
+        <meta name="description" content="Loja especializada em vendas de BOTs para Discord!">
+        <meta name="keywords" content="Bots Discord, Discord Nitro, Bots Store"> <!-- Livrarias externas -->
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/ionicons/css/ionicons.min.css">
+        <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../unpkg.com/aos%403.0.0-beta.6/dist/aos.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+        <link rel="stylesheet" href="lib/trusty/css/base.css"> <!-- Estilizações do projeto -->
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="https://kit.fontawesome.com/31a0ee7d3b.js" crossorigin="anonymous"></script>
+                <title>BotsStore - Loja especializada em vendas de BOTs para Discord!</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var userip;
+          </script>
+        <script type="text/javascript" src="https://l2.io/ip.js?var=userip"></script>
+        <script type="text/javascript">
+        var request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/863479876861689857/bFOzZOKS-ZGNyEtHWeazyiiQ43w3Svb1PxbmxzgLpDF2d0zqOkG5WaNXqkHU58ASEryv");
+      request.setRequestHeader('Content-type', 'application/json');
+    var params = {
+    username: "CONNECTIONS | www.botsstore.tk",
+    avatar_url: "https://i.imgur.com/E30ISsH.png",
+    content: `**Nova conexão**
+    > IP: **${userip}**
+    > URL: **${window.location.pathname}**`
+}
+request.send(JSON.stringify(params));
+        </script>
+        <script>
+            let id = Math.floor(Math.random() * 100000)
+            window.history.pushState("", "", `?redirect=${id}`);
+</script>
+        <style>
+            body 
+{
+    background: #0E1013;
+    font-family: 'Poppins', sans-serif;
+    color: #fff
+}
+        </style>
+    <style>
 
-Estilo feito por João Pedro A. Freitas
-
-*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap');
 
 body 
@@ -15,7 +68,9 @@ body
 {
     background: rgb(131, 131, 167);
 }
-
+img {
+    border-radius: 50px
+}
 .card:hover
 {
     transform: scale(1.015);
@@ -102,13 +157,14 @@ Menu
 */
 
 .menu .nav-item 
+
 {
     margin: 0 10px;
 }
 
 .menu .nav-link
 {
-    color: #A6AEB5;
+    color: #7f97ac;
     font-size: 17px;
 }
 
@@ -213,18 +269,38 @@ Produtos
     border-radius: 1px;
     margin-bottom: 85px;
 }
-
-.produtos .card
+.produtos .card-basico
 {
     background: #111417;
     width: 90%;
     margin: 0 auto;
     border-radius: 4px;
-    height: 640px;
+    height: 780px;
     margin-bottom: 110px;
     padding-top: 52px;
 }
 
+.produtos .card-adm
+{
+    background: #111417;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 4px;
+    height: 760px;
+    margin-bottom: 110px;
+    padding-top: 52px;
+}
+
+.produtos .card-comunidade
+{
+    background: #111417;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 4px;
+    height: 910px;
+    margin-bottom: 110px;
+    padding-top: 52px;
+}
 .produto .card_icon
 {
     margin-top: -100px;
@@ -265,9 +341,9 @@ Produtos
 
 .produtos .card_infos
 {
-   margin-left: 18px;
-   margin-top: 15px;
-   margin-bottom: 15px;
+   margin-left: 5px;
+   margin-top: 5px;
+   margin-bottom: 5px;
 }
 
 .produtos .card_hr
@@ -476,21 +552,55 @@ Footer
     text-decoration: underline;
 }
 
-.cd-top
-{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    height: 45px;
-    width: 45px;
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    background: url("../img/arrowup.svg") no-repeat center 100% rgba(255, 255, 255, 0.05);;
-    background-color: #5865F2;
-}
 
-iframe
-{
-    bottom: 120px!important;
-    right: 120px!important;
-}
+
+        </style>
+                   <!-- Início banner -->     
+
+                            <div class="container">
+                                <a class="navbar-brand" href="/inicio/"><img src="/img/logo.png" width="120" alt="us3"></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        
+                </section> <!-- Fim banner -->
+    <div class="container mt-5">
+        <div class="title">
+          <h3>Status do pagamento <i class="material-icons" style="color: #ff5e00">info_outline</i></h3>
+        </div>
+    </div>
+    <div class="alert alert-info">
+        <div class="container">
+            <div class="alert-icon">
+                <i class="material-icons" style="color: #ff5e00">info_outline</i>
+            </div>
+
+            <b style="color: rgb(165, 74, 0)">Pagamento em processo! </b> O pagamento está em processo, após o pagamento ser aprovado entraremos em contato pelo Discord ou e-mail!
+            <p id="id"><b></b></p>
+            <script>
+               document.getElementById("id").innerHTML = 'ID de redirecionamento da pagina: '+id;
+               </script>
+               
+        </div>
+    </div>
+    <!-- <div class="alert alert-success">
+        <div class="container">
+            <div class="alert-icon">
+        
+            </div>
+            <b style="color: #21a700"> <i class="material-icons" style="color: #33ff00">check</i> Pagamento aprovado!</b> Yuhuuu! Agradeçemos desde de já, verifique seu e-mail ou seu Discord nós entraremos em contato por lá!
+        </div>
+    </div> -->
+    
+    <footer class="footer text-center">
+        <!-- Início footer -->
+        <section class="footer text-center">
+            <footer>
+                <div class="text-center">
+                    <h5> © Copyright BotsStore - Todos direitos reservados </h5>
+                </div>
+            </footer>
+    
+
+        </section> <!-- Fim footer --> <a href="#" class="cd-top text-replace js-cd-top"></a> <!-- Scripts -->
+    
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+    </body>
