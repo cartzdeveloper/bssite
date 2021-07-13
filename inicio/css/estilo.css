@@ -200,14 +200,14 @@ Produtos
     font-weight: 500;
 }
 
-.produtos p
+.produtos p 
 {
     color: #747B8B;
     font-size: 18px;
     margin-top: 0px;
 }
 
-.produtos .hr_title
+.produtos .hr_title 
 {
     border-color: #5865F2;
     border: 1px solid #5865F2;
@@ -247,7 +247,7 @@ Produtos
     margin-bottom: 110px;
     padding-top: 52px;
 }
-.produto .card_icon
+.produto .card_icon 
 {
     margin-top: -100px;
     margin: 0 auto;
@@ -350,7 +350,7 @@ Produtos
     display: flex;
 }
 
-.produtos .selector
+.produtos .selector .card-comunidade .card-basico .card-adm
 {
     padding: 12px;
     background: transparent;
@@ -363,7 +363,7 @@ Produtos
     cursor: pointer;
 }
 
-.produtos .selector:hover
+.produtos .selector:hover 
 {
     transform: scale(1.08);
 }
